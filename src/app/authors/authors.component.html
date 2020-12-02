@@ -1,5 +1,6 @@
-<h2>Authors Page</h2>
-<p>{{ authors.length }}authors</p>
+<h2>Authors component</h2>
+<p>Se utiliza la directiva <b>ngFor</b> para recorrer un array de Strings.</p>
+<p>Se encontraron {{ authors.length }} autores:</p>
 <ul>
     <li *ngFor="let author of authors">{{ author }}</li>
 </ul>
