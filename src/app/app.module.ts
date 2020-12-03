@@ -10,6 +10,7 @@ import { AuthorService } from './author.service';
 import { LikeComponent } from './like/like.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
 import { TitleCasePipe } from './common/title-case.pipe';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TitleCasePipe } from './common/title-case.pipe';
     FavoriteComponent,
     LikeComponent,
     ZippyComponent,
-    NewCourseFormComponent
+    NewCourseFormComponent,
+    SignupFormComponent
   ],
   imports: [
     BrowserModule,

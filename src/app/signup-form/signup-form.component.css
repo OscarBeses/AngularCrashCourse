@@ -1,0 +1,10 @@
+:host {
+    border-left: 6px solid #28cc8d;
+    background-color: #c0ebdb;
+}
+
+form {
+    border: 1px solid #28cc8d33;
+    border-radius: 5px;
+    padding: 10px;
+}
