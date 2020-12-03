@@ -3,6 +3,12 @@
     background-color: #facccc;
 }
 
+.contenido {
+    border: 1px solid #d8709333;
+    border-radius: 5px;
+    padding: 10px;
+}
+
 .bi { 
     cursor: pointer;
     margin-right: .5em;

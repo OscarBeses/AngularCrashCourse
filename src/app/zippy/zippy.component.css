@@ -4,8 +4,9 @@
 }
 
 .zippy { 
-    border: 1px solid #ccc;
-    border-radius: 2px;
+    border: 1px solid #e0dd0a80;
+    border-radius: 5px;
+    height: 138px;
 }
 
 .zippy-heading { 

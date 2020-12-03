@@ -1,0 +1,10 @@
+:host {
+    border-left: 6px solid peru;
+    background-color: papayawhip;
+}
+
+form {
+    border: 1px solid #cd853f33;
+    border-radius: 5px;
+    padding: 10px;
+}

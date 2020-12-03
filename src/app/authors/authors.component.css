@@ -1,4 +1,11 @@
 :host {
     border-left: 6px solid #0e6dbb;
     background-color: #ccd1fa;
-}  
+}
+
+.contenido {
+    border: 1px solid #0e6dbb33;
+    border-radius: 5px;
+    padding: 10px;
+    height: auto;
+}
