@@ -1,0 +1,17 @@
+:host {
+    border-left: 6px solid #aa0606;
+    background-color: #facccc;
+    display: block;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.bi { 
+    cursor: pointer;
+    margin-right: .5em;
+}
+
+.highlighted { 
+    color: deeppink;
+}
+
