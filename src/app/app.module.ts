@@ -1,3 +1,4 @@
+import { ZippyComponent } from './zippy/zippy.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -15,7 +16,8 @@ import { LikeComponent } from './like/like.component';
     AuthorsComponent,
     FavoriteComponent,
     TitleCasePipe,
-    LikeComponent
+    LikeComponent,
+    ZippyComponent
   ],
   imports: [
     BrowserModule

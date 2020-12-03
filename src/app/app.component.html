@@ -1,11 +1,16 @@
 <!-- El título se adapta mediante un custom pipe -->
-<span class="d-inline-block mi-tooltip" tabindex="0" data-toggle="tooltip" title="Este título se adapta utilizando un custom pipe">
+<span class="d-inline-block obc-tooltip" tabindex="0" data-toggle="tooltip" title="Este título se adapta utilizando un custom pipe">
     <h1 >{{ title | titleCase }}</h1>
 </span>
-<app-authors></app-authors>
-<favorite></favorite>
-<like 
-    [likesCount]="tweet.likesCount"
-    [isActive]="tweet.isLiked"
-></like>
-<p>next</p>
+<div class="obc-container">
+    <app-authors></app-authors>
+    <favorite></favorite>
+    <like
+        [likesCount]="tweet.likesCount" 
+        [isActive]="tweet.isLiked">
+    </like>
+    <zippy title="Shipping Details">
+        Shipping Details Content
+    </zippy>
+    <p>next</p>
+</div>

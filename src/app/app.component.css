@@ -1,6 +1,21 @@
-.mi-tooltip {
+.obc-tooltip {
     width: 100%;
 }
-.mi-tooltip > h1 {
+.obc-tooltip > h1 {
     text-align: center;
+    margin: 20px auto;
+}
+
+.obc-container {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.obc-container > * {
+    display: inline-block;
+    border-radius: 7px;
+    padding: 1em;
+    width: 350px;
+    margin: 20px 10px;
 }

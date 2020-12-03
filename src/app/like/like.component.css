@@ -1,9 +1,6 @@
 :host {
-    border-left: 6px solid #aa0606;
+    border-left: 6px solid palevioletred;
     background-color: #facccc;
-    display: block;
-    border-radius: 3px;
-    padding: 1em;
 }
 
 .bi { 
@@ -12,6 +9,6 @@
 }
 
 .highlighted { 
-    color: deeppink;
+    color: palevioletred;
 }
 
