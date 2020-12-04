@@ -1,0 +1,14 @@
+:host {
+    border-left: 6px solid #cc2828;
+    background-color: #caa1a1;
+}
+
+.contenido {
+    border: 1px solid #cc282833;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.contenido li {
+    background-color: #caa1a1;
+}

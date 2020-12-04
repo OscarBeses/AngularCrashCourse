@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AuthorsComponent } from './authors/authors.component';
@@ -12,6 +13,7 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
 import { TitleCasePipe } from './common/title-case.pipe';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     ZippyComponent,
     NewCourseFormComponent,
     SignupFormComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
      */
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [AuthorService],
   bootstrap: [AppComponent]
