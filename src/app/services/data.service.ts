@@ -2,8 +2,8 @@ import { BadInput } from './../common/bad-input';
 import { NotFoundError } from './../common/not-found-error';
 import { AppError } from './../common/app-error';
 import { HttpClient } from '@angular/common/http';
-import { Inject, Injectable, InjectionToken } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Inject, Injectable } from '@angular/core';
+import { Observable, throwError } from 'rxjs';
 
 @Injectable()
 export class DataService {
@@ -46,11 +46,11 @@ export class DataService {
 
   private handleError(error: Response) {
     if (error.status === 400)
-      return Observable.throw(new BadInput(error.json()));
+      return throwError(new BadInput(error.json()));
   
     if (error.status === 404)
-      return Observable.throw(new NotFoundError());
+      return throwError(new NotFoundError());
     
-    return Observable.throw(new AppError(error));
+    return throwError(new AppError(error));
   }
 }
