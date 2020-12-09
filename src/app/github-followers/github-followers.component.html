@@ -1,0 +1,17 @@
+<h2>
+  Github-followers component
+</h2>
+<p>Ejercicio</p>
+<div class="contenido">
+  <div *ngFor="let follower of followers" class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="avatar media-object" src="{{ follower.avatar_url }}" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h5 class="media-heading">{{ follower.login }}</h5>
+      <a href="follower.html_url">{{ follower.html_url }}</a>
+    </div>
+  </div>
+</div>

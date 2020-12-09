@@ -1,0 +1,21 @@
+:host {
+    border-left: 6px solid #0c3ddd;
+    background-color: #929fcc;
+}
+
+.contenido {
+    border: 1px solid #0c3ddd33;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.contenido li {
+    background-color: #caa1a1;
+}
+
+.avatar { 
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    padding: 0 10px 20px 10px;
+}

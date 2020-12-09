@@ -1,4 +1,3 @@
-import { PostService } from './services/post.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,6 +15,9 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PostsComponent } from './posts/posts.component';
 import { NotFoundError } from './common/not-found-error';
+import { GithubFollowersComponent } from './github-followers/github-followers.component';
+import { PostService } from './services/post.service';
+import { GithubFollowersService } from './services/github-followers.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { NotFoundError } from './common/not-found-error';
     NewCourseFormComponent,
     SignupFormComponent,
     ChangePasswordComponent,
-    PostsComponent
+    PostsComponent,
+    GithubFollowersComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { NotFoundError } from './common/not-found-error';
       provide: ErrorHandler, 
       useClass: NotFoundError
     },
-    PostService
+    PostService,
+    GithubFollowersService
   ],
   bootstrap: [AppComponent]
 })
