@@ -1,5 +1,6 @@
+import { PostService } from './services/post.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -14,6 +15,7 @@ import { TitleCasePipe } from './common/title-case.pipe';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { PostsComponent } from './posts/posts.component';
+import { NotFoundError } from './common/not-found-error';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,14 @@ import { PostsComponent } from './posts/posts.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AuthorService],
+  providers: [
+    AuthorService,
+    { 
+      provide: ErrorHandler, 
+      useClass: NotFoundError
+    },
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

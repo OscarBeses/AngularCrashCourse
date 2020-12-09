@@ -3,11 +3,17 @@
     Getting data from the server
 </p>
 <div class="contenido">
-    <ul class="list-group">
-        <li 
-            *ngFor="let post of posts"
-            class="list-group-item">
-            {{ post.title }}
-        </li>
-    </ul>
+  <input 
+    (keyup.enter)="createPost(title)" #title
+    type="text" class="form-control" placeholder="escribe algo y pulsa intro">
+  <ul class="list-group">
+    <li 
+      *ngFor="let post of posts"
+      class="list-group-item">
+      <button 
+        (click)="deletePost(post)"
+        class="btn btn-default btn-sm">Delete</button>
+      {{ post.title }}
+    </li>
+  </ul>
 </div>
